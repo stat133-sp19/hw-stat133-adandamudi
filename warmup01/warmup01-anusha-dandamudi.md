@@ -1,0 +1,89 @@
+Warmup 1
+================
+Anusha Dandamudi
+01/31/19
+
+#### Star Wars
+
+A famous quote by [Darth Vader](https://en.wikipedia.org/wiki/Darth_Vader):
+
+> "Be careful not to choke on your convictions."
+
+![](https://starwarsblog.starwars.com/wp-content/uploads/2017/03/darth-vader-1-cover-header.jpg)
+
+| Description | Value |
+|-------------|-------|
+| Species     | Human |
+| Gender      | Male  |
+| Eye Color   | Black |
+
+------------------------------------------------------------------------
+
+#### Crispy rice and egg bowl with ginger-scallion vinaigrette
+
+![](crispy-rice.jpg)
+
+##### Ingredients
+
+-   1 1/4 cups minced scallions
+-   2 tablespoons minced or finely grated fresh ginger
+-   Neutral oil (grapeseed, safflower, sunflower)
+-   1/4 cup sherry or rice wine vinegar
+-   Fine sea salt
+-   1 heaped cup julienned or coarsely grated carrots
+-   8 ounces small (Persian-style, about 2) cucumbers, thinly sliced
+-   3 cups cooked, cooled rice
+-   4 eggs
+-   Soy sauce or tamari (to serve)
+-   Toasted sesame oil (to serve)
+-   Sriracha, gochujang or another hot sauce of your choice (to serve)
+
+##### Kitchen Tools
+
+-   Mixing bowls
+-   Large frying pan
+-   Spatula
+-   Tablespoon
+-   Teaspoon
+
+##### Instructions
+
+There are five main steps to making the crispy rice and egg bowl with ginger-scallion vinaigrette.
+
+1.  *Make the vinaigrette*: Mix scallions, ginger, 1/4 cup oil and sherry or rice wine vinegar in a bowl. Season with salt (I use about 1/2 teaspoon fine sea salt). Set aside.
+
+2.  *Crisp your rice*: Heat a large frying pan over medium high. Add 1 to 2 tablespoons oil; you’ll want to coat the bottom with a thin layer of oil all over. Nonstick pan (as I used) are more forgiving here, so you can use the lower amount. Heat the oil until it’s hot, another minute, then scatter half the rice over the surface; it’s okay if small clusters remain. Season lightly with salt and do not touch it. In 3 to 5 minutes, the underside will become golden brown and crisp. Use a spatula to flip it in sections then fry on the other side until it is also crisp. Divide between two bowls and repeat with remaining rice, dividing it between two remaining bowls.
+
+3.  *Crisp your egg*: If there isn’t enough oil left in the pan (you want a thin layer), add another splash and heat this on high heat. Add eggs one at a time and season lightly with salt and pepper. Cook until brown, lacy, and crisp underneath, and the whites are opaque, bubbly and dramatic and the edges are brown. You can spoon some oil from the pan over the egg whites to help them cook faster. Place one egg on each bowl of rice.
+
+4.  *Assemble bowls*: Arrange some cucumbers and carrots to each bowl. Spoon 2 tablespoons vinaigrette onto each bowls. Drizzle each egg with a half-teaspoon of tamari and toasted sesame oil, letting it roll onto the other ingredients, plus hot sauce to taste. Eat immediately. Repeat frequently.
+
+5.  *Do ahead*: The dressing will keep for 5 to 6 days in the fridge; the chopped vegetables will keep for 3 to 4.
+
+There is no particular season for making this crispy rice and egg bowl. However, it is recommended that you use cold, leftover rice instead of hot, freshly-cooked rice for optimal taste and texture.
+
+There are no major variations of the recipe. However, individuals are free to use whichever oil they prefer as their neutral oil. Options include grapeseed, safflower, and sunflower oil.
+
+[Click here](https://smittenkitchen.com/2019/01/crispy-rice-and-egg-bowl-with-ginger-scallion-vinaigrette/) to view this recipe in more detail on SmittenKitchen.
+
+[Click here](https://www.flickr.com/photos/smitten/46642893062/in/photostream/) to see other images of the food.
+
+------------------------------------------------------------------------
+
+#### Euclidean Distance
+
+##### Definition
+
+------------------------------------------------------------------------
+
+The **Euclidean distance** between points **p** and **q** is the length of the line segment connecting them (${\\overline {\\mathbf{p} \\mathbf{q}}}$).
+
+In Cartesian coordinates, if **p** = (*p*<sub>1</sub>, *p*<sub>2</sub>,..., *p*<sub>*n*</sub>) and **q** = (*q*<sub>1</sub>, *q*<sub>2</sub>,..., *q*<sub>*n*</sub>) are two points in Euclidean n-space, then the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula:
+
+${\\displaystyle {\\begin{aligned} d(\\mathbf{p} ,\\mathbf{q}) = d(\\mathbf{q}, \\mathbf{p}) &= {\\sqrt {(q\_{1}-p\_{1})^{2}+(q\_{2}-p\_{2})^{2}+\\cdots +(q\_{n}-p\_{n})^{2}}} \\\\ &= {\\sqrt {\\sum\_{i=1}^{n}(q\_{i}-p\_{i})^{2}}}. \\end{aligned}}}$
+
+The position of a point in a Euclidean n-space is a Euclidean vector. So, **p** and **q** may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. The **Euclidean norm**, or **Euclidean length**, or **magnitude** of a vector measures the length of the vector:
+
+${\\left\\| \\mathbf{p} \\right\\| = {\\sqrt{p\_{1}^{2}+p\_{2}^{2}+\\cdots+p\_{n}^{2}}} = {\\sqrt {\\mathbf{p} \\cdot \\mathbf{p} }}}$,
+
+where the last expression involves the dot product.
