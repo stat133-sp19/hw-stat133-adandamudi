@@ -4,7 +4,7 @@ library(rsconnect)
 
 #Include input and output functions here
 ui <- fluidPage(
-  titlePanel("Saving Simulations"),
+  titlePanel("Savings Simulations"),
   fluidRow(
     column(4, sliderInput(inputId = "init_amount",
                           label = "Initial Amount",
