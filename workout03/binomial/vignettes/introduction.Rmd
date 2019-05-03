@@ -1,0 +1,117 @@
+---
+title: "Introduction to Package binomial"
+author: "Anusha Dandamudi"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Package binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+library(ggplot2)
+```
+
+This package allows for easy calculation of probabilities of a binomial random variable. Functionalities provided by this package include calculating the expected value, variance, mode, skewness, and kurtosis of a binomial random variable. You can also calculate the cumulative distribution of a binomial random variable along with plots of the binomial distribution and cumulative binomial distribution.
+
+Before using this package, you must decide on the number of trials and the probability of success you want your binomial random variable to be created with.
+
+### Main binomial functions
+The package `binomial` provides functions for basic calculations of a binomial random variable: <br>
++ `bin_choose()`<br>
++ `bin_variable()` <br>
++ `bin_probability()`<br>
++ `bin_distribution()`<br>
++ `bin_cumulative()`<br>
++ `bin_mean()`<br>
++ `bin_variance()`<br>
++ `bin_mode()`<br>
++ `bin_skewness()`<br>
++ `bin_kurtosis()`<br>
+
+#### bin_choose(n, k)
+Calculates the number of combinations in which k successes can occur in n trials. This function does the equivalent to $$\frac{n!}{k!(n-k)!}$$. 
+```{r}
+bin_choose(n = 5, k = 2)
+```
+
+#### bin_variable(trials, p)
+Creates and returns a binomial random variable object of class "binvar" with the the user-specified trials and probability p.
+```{r}
+bin_var <- bin_variable(trials = 5, p = 0.5)
+bin_var
+```
+
+You can also view the summary of the components of a binomial random variable by calling the function `summary()` on such an object. This will display the total number of trials and the probability of success for the binomial random variable you defined.
+```{r}
+bin_rv_sum <- summary(bin_var)
+bin_rv_sum
+```
+
+#### bin_probability(success, trials, prob)
+Calculates the probability of getting a certain number of successes in the total trials. 
+```{r}
+bin_probability(success = 0:5, trials = 5, prob = 0.5)
+```
+
+#### bin_distribution(trials, prob)
+Calculates the probability of all possible number of successes with the specified number of trials and probability of success. You can also visualize the probability distribution by plotting the result of this function.
+```{r}
+bin_dis <- bin_distribution(trials = 5, prob = 0.5)
+bin_dis
+```
+
+```{r}
+plot(bin_dis)
+```
+
+#### bin_cumulative(trials, prob)
+Calculates the cumulative probability of all possible number of successes with the specified number of trials and probability of success. You can also visualize the probability distribution by plotting the result of this function.
+```{r}
+bin_cum <- bin_cumulative(trials = 5, prob = 0.5)
+bin_cum
+```
+
+```{r}
+plot(bin_cum)
+```
+
+#### bin_mean(trials, prob)
+Calculates the mean of the binomial variable with the specified number of trials and success probability
+```{r}
+bin_mean(trials = 5, prob = 0.5)
+```
+
+#### bin_variance(trials, prob)
+Calculates the variance of the binomial variable with the specified number of trials and success probability
+```{r}
+bin_variance(trials = 5, prob = 0.5)
+```
+
+#### bin_mode(trials, prob)
+Calculates the mode of the binomial variable with the specified number of trials and success probability
+```{r}
+bin_mode(trials = 5, prob = 0.5)
+```
+
+#### bin_skewness(trials, prob)
+Calculates the skewness of the binomial variable with the specified number of trials and success probability
+```{r}
+bin_skewness(trials = 5, prob = 0.5)
+```
+
+#### bin_kurtosis(trials, prob)
+Calculates the kurtosis of the binomial variable with the specified number of trials and success probability
+```{r}
+bin_kurtosis(trials = 5, prob = 0.5)
+```
+
+Notes that the success probability value selected must be between 0 and 1 inclusive. Otherwise, you will get an error.
+
+
+
+
+
