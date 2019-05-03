@@ -34,10 +34,10 @@ After this, you are ready to install the package `binomial`.
 
 ```r
 # Install "cointoss" (without vignettes) 
-devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-adandamudi/workout03/binomial")
 
 # Install "cointoss" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-adandamudi/workout03/binomial", build_vignettes = TRUE)
 ```
 
 ### Prerequisites
