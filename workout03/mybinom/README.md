@@ -34,10 +34,10 @@ After this, you are ready to install the package `mybinom`.
 
 ```r
 # Install "cointoss" (without vignettes) 
-devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03")
+devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03/mybinom")
 
 # Install "cointoss" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-adandamudi/tree/master/workout03/mybinom", build_vignettes = TRUE)
 ```
 
 ### Prerequisites
