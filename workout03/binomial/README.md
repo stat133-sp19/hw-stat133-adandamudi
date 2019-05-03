@@ -39,7 +39,7 @@ devtools::install_github("stat133-sp19/hw-stat133-adandamudi/workout03/binomial"
 # Install "cointoss" (with vignettes)
 devtools::install_github("stat133-sp19/hw-stat133-adandamudi/workout03/binomial", build_vignettes = TRUE)
 ```
-
+ 
 ### Prerequisites
 
 To be able to run the R code that produces the visualizations and summaries, you will need to install R (and preferably RStudio) on your computer. You will also need to install the following R packages to ensure complete functionality of the code: "ggplot2"
