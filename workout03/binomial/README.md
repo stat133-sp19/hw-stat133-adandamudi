@@ -24,13 +24,13 @@ You can clone this Gitub repository or simply download the zip file if you wish 
 
 Manual installation of this package can be done as follows: 
 
-You first need to make sure you have installed the package `devtools` as you will be using this package to download `mybinom`.
+You first need to make sure you have installed the package `devtools` as you will be using this package to download `binomial`.
 
 ```r
 install.packages("devtools")
 ```
 
-After this, you are ready to install the package `mybinom`.
+After this, you are ready to install the package `binomial`.
 
 ```r
 # Install "cointoss" (without vignettes) 
@@ -58,7 +58,7 @@ After this, you should be able to run the R code and reproduce the visualization
 ### Usage
 
 ```r
-library(mybinom)
+library(binomial)
 
 #Make a binomial random variable
 bin_var <- bin_variable(trials = 5, p = 0.5)
