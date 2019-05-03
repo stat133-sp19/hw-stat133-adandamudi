@@ -68,7 +68,7 @@ bin_distribution <- function(trials, prob) {
 
 #' @export
 plot.bindis <- function(x,...) {
-  plot <- ggplot(data = x, aes(x = success, y = probability)) +
+  plot <- ggplot(data = x, aes(x = x$success, y = x$probability)) +
             geom_bar(stat="identity") +
             xlab("Number of successes") +
             ylab("Probability") +
@@ -99,7 +99,7 @@ bin_cumulative <- function(trials, prob) {
 
 #' @export
 plot.bincum <- function(x,...) {
-  plot <- ggplot(data = x, aes(x = success, y = cumulative)) +
+  plot <- ggplot(data = x, aes(x = x$success, y = x$cumulative)) +
             geom_line() +
             geom_point() +
             xlab("Number of successes") +
@@ -134,11 +134,15 @@ bin_variable <- function(trials, prob) {
 
 #' @export
 print.binvar <- function(x,...) {
-  cat("\"Binomial Variable\"\n\n")
-  cat("Parameters\n")
-  cat("\t- number of trials : ", x$trials, " \n")
-  cat("\t- prob of success : ", x$prob, " \n")
-
+  cat('"Binomial Variable"\n\n')
+  cat('Parameters\n')
+  cat(sprintf('- number of trials : %d', x$trials), "\n")
+  cat(sprintf('- prob of success : %f', x$prob), "\n")
+  invisible(x)
+  # cat("\"Binomial Variable\"\n\n")
+  # cat("Parameters\n")
+  # cat("\t- number of trials : ", x$trials, "\n")
+  # cat("\t- prob of success : ", x$prob, "\n")
   # sprintf("\"Binomial Variable\"\n\n")
   # sprintf("Parameters\n")
   # sprintf("- number of trials : %d\n", x$trials)
@@ -161,16 +165,23 @@ summary.binvar <- function(object,...) {
 
 #' @export
 print.summary.binvar <- function(x,...) {
-  cat("\"Summary Binomial\"\n\n")
-  cat("Parameters\n")
-  cat("\t- number of trials : ", x$trials, " \n")
-  cat("\t- prob of success : ", x$prob, " \n\n")
-  cat("Measures\n")
-  cat("- mean\t: ", x$mean, " \n")
-  cat("\t- variance\t: ", x$variance, " \n")
-  cat("\t- mode\t: ", x$mode, " \n")
-  cat("\t- skewness\t: ", x$skewness, " \n")
-  cat("\t- kurtosis\t: ", x$kurtosis, " \n")
+  cat('"Summary Binomial"\n\n')
+  cat('Parameters\n')
+  cat(sprintf('- number of trials : %d', x$trials), "\n")
+  cat(sprintf('- prob of success : %f', x$prob), "\n\n")
+  cat('Measures\n')
+  cat(sprintf('- mean : %f', x$mean), "\n")
+  cat(sprintf('- variance : %f', x$variance), "\n")
+  cat(sprintf('- mode : %f', x$mode), "\n")
+  cat(sprintf('- skewness : %f', x$skewness), "\n")
+  cat(sprintf('- kurtosis : %f', x$kurtosis), "\n")
+  invisible(x)
+  
+  # cat("\t- mean\t: ", x$mean, " \n")
+  # cat("\t- variance\t: ", x$variance, " \n")
+  # cat("\t- mode\t: ", x$mode, " \n")
+  # cat("\t- skewness\t: ", x$skewness, " \n")
+  # cat("\t- kurtosis\t: ", x$kurtosis, " \n")
 
   # sprintf("\"Summary Binomial\"\n\n")
   # sprintf("Parameters\n")

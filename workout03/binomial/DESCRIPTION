@@ -15,6 +15,7 @@ Collate:
     checker_func.R
     auxiliary_func.R
     main_func.R
+    ggplot2-package.R
 RoxygenNote: 6.1.1
 Imports:
     ggplot2,

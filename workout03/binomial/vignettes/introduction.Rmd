@@ -12,7 +12,6 @@ vignette: >
 ```{r, echo=FALSE, message=FALSE}
 knitr::opts_chunk$set(collapse = T, comment = "#>")
 library(binomial)
-library(ggplot2)
 ```
 
 This package allows for easy calculation of probabilities of a binomial random variable. Functionalities provided by this package include calculating the expected value, variance, mode, skewness, and kurtosis of a binomial random variable. You can also calculate the cumulative distribution of a binomial random variable along with plots of the binomial distribution and cumulative binomial distribution.

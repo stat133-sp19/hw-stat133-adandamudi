@@ -12,7 +12,7 @@ bin_choose(n, k)
 \item{k}{Number of successes}
 }
 \value{
-Number of possible ways you can can n trials with k successes
+Number of possible ways you can n trials with k successes
 }
 \description{
 Calculates the number of combinations in which k successes can occur in n trials

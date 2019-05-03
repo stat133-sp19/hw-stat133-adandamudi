@@ -17,7 +17,7 @@ bin_probability(success, trials, prob)
 Probability of k successes in n trials with sucess probability being p
 }
 \description{
-Calculates the probability of getting k successes in specified number of trials and success probabilities
+Calculates the probability of k successes with the specified number of trials and success probability
 }
 \examples{
 bin_probability(success = 2, trials = 5, prob = 0.5)

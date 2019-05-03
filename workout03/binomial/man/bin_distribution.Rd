@@ -12,7 +12,7 @@ bin_distribution(trials, prob)
 \item{prob}{Probability of success}
 }
 \value{
-Two column data frame with two classes c("bindis", "data.frame") specifying probability
+Two column data frame of classes c("bindis", "data.frame") specifying probability
 }
 \description{
 Calculates the probability dist of varying number of success with specified number of trials and success prob
